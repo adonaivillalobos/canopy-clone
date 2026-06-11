@@ -16,8 +16,8 @@ body {
 }
 
 .sidebar {
-  width: 95px;
-  background: #000000;
+  width: 56px;
+  background: #1e1e2d;
   padding: 16px 0;
   display: flex;
   flex-direction: column;
@@ -26,42 +26,42 @@ body {
 }
 
 .sidebar-logo {
-  width: 36px;
-  height: 36px;
-  background: black;
+  width: 32px;
+  height: 32px;
+  background: #4f46e5;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 35px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .sidebar-plus {
-  width: 65px;
-  height: 40px;
-  background: blue;
-  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  background: #4f46e5;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 20px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .sidebar-plus:hover {
-  background: blue;
+  background: #4338ca;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 4px;
   width: 100%;
   flex: 1;
 }
@@ -70,40 +70,185 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 8px 0;
-  width: 100%;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
-  color: white;
-  font-size: 12px;
-  transition: color 0.2s;
+  color: #9ca3af;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.sidebar-bottom-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.nav-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #9ca3af;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-item-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
 .sidebar-user {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   background: #4f46e5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   cursor: pointer;
-  margin-top: auto;
+  margin-top: 8px;
 }
 
 .content {
   flex: 1;
   padding: 40px;
 }
+
 .content p {
   font-size: 18px;
   line-height: 1.6;
   padding-top: 20px;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 24px 40px 0 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: #1f2937;
+}
+
+.tab.active {
+  color: #4f46e5;
+  border-bottom: 2px solid #4f46e5;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  padding: 24px 40px;
+}
+
+.calendar-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+}
+
+.calendar-date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.calendar-day-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.calendar-day-number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.2;
+}
+
+.calendar-events {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calendar-event {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.event-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.event-time {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.event-title {
+  font-size: 13px;
+  color: #1f2937;
+  font-weight: 500;
 }

@@ -5,7 +5,9 @@ import {
   Briefcase,
   Clock,
   CreditCard,
-  Layout
+  Layout,
+  CalendarDays,
+  GraduationCap
 } from 'lucide-react'
 
 function Sidebar() {
@@ -25,42 +27,45 @@ function Sidebar() {
       {/* Nav items */}
       <nav className="sidebar-nav">
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Inbox">
           <Inbox size={20} />
-          <span>Inbox</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Clients">
           <Users size={20} />
-          <span>Clients</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Files">
           <FolderOpen size={20} />
-          <span>Files</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Work">
           <Briefcase size={20} />
-          <span>Work</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Time">
           <Clock size={20} />
-          <span>Time</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Billing">
           <CreditCard size={20} />
-          <span>Billing</span>
         </a>
 
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" title="Templates">
           <Layout size={20} />
-          <span>Templates</span>
         </a>
 
       </nav>
+
+      {/* Bottom icons */}
+      <div className="sidebar-bottom-icons">
+        <a href="#" className="nav-item-icon">
+          <CalendarDays size={20} />
+        </a>
+        <a href="#" className="nav-item-icon">
+          <GraduationCap size={20} />
+        </a>
+      </div>
 
       {/* User initials at bottom */}
       <div className="sidebar-user">

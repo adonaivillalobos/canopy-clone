@@ -1,14 +1,20 @@
 import './App.css'
 import Sidebar from './Sidebar'
+import Header from './Header'
+import CalendarPanel from './CalendarPanel'
 
 function App() {
   return (
     <div className="layout">
       <Sidebar />
-      <main className="content">
-        <h1>Dashboard</h1>
-        <p><strong>Welcome back!</strong></p>
-      </main>
+      <div className="main">
+        <Header name="David" />
+        <main className="content">
+          <div className="dashboard-grid">
+            <CalendarPanel />
+          </div>
+        </main>
+      </div>
     </div>
   )
 }
