@@ -64,7 +64,7 @@ function Sidebar() {
 
       {/* User initials at bottom */}
       <div className="sidebar-user">
-        AB
+        DV
       </div>
 
     </aside>

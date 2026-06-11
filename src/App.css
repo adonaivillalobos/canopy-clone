@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar {
-  width: 72px;
+  width: 95px;
   background: #000000;
   padding: 16px 0;
   display: flex;
@@ -28,7 +28,7 @@ body {
 .sidebar-logo {
   width: 36px;
   height: 36px;
-  background: #4f46e5;
+  background: black;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -36,32 +36,32 @@ body {
   color: white;
   font-weight: 700;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 35px;
 }
 
 .sidebar-plus {
-  width: 36px;
-  height: 36px;
-  background: #1f1f1f;
-  border-radius: 8px;
+  width: 65px;
+  height: 40px;
+  background: blue;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 20px;
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
 }
 
 .sidebar-plus:hover {
-  background: #2f2f2f;
+  background: blue;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 25px;
   width: 100%;
   flex: 1;
 }
@@ -70,11 +70,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
   padding: 8px 0;
   width: 100%;
   text-decoration: none;
-  color: #6b7280;
+  color: white;
   font-size: 10px;
   transition: color 0.2s;
 }
@@ -100,5 +100,10 @@ body {
 
 .content {
   flex: 1;
-  padding: 32px;
+  padding: 40px;
+}
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 20px;
 }

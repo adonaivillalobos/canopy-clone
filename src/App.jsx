@@ -7,7 +7,7 @@ function App() {
       <Sidebar />
       <main className="content">
         <h1>Dashboard</h1>
-        <p>Welcome back!</p>
+        <p><strong>Welcome back!</strong></p>
       </main>
     </div>
   )
