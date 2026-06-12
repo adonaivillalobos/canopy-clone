@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import Header from './Header'
 import CalendarPanel from './CalendarPanel'
 import TasksPanel from './TasksPanel'
+import CoworkerPanel from './CoworkerPanel'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <CalendarPanel />
             <TasksPanel />
           </div>
+          <CoworkerPanel />
         </main>
       </div>
     </div>

@@ -308,3 +308,74 @@ body {
   font-size: 12px;
   color: #6b7280;
 }
+.coworker-panel {
+  margin: 0 24px 24px 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px 24px;
+}
+
+.coworker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.coworker-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.coworker-open {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 13px;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.coworker-open:hover {
+  background: #f5f3ff;
+}
+
+.coworker-question {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.coworker-suggestions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.suggestion-btn {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.suggestion-btn:hover {
+  background: #f5f3ff;
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.coworker-selected {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #4f46e5;
+  font-weight: 500;
+}
