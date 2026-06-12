@@ -1,22 +1,20 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import Header from './Header'
 import CalendarPanel from './CalendarPanel'
 import TasksPanel from './TasksPanel'
-import CoworkerPanel from './CoworkerPanel'
 
 function App() {
   return (
     <div className="layout">
       <Sidebar />
       <div className="main">
-        <Header name="David" />
         <main className="content">
           <div className="dashboard-grid">
             <CalendarPanel />
             <TasksPanel />
           </div>
-          <CoworkerPanel />
         </main>
       </div>
     </div>
